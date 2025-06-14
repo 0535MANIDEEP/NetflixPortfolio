@@ -1,0 +1,83 @@
+🔧 TASK: Build and deploy a Netflix-themed personal portfolio web app for Manideep Daram.
+
+🎯 GOAL: Showcase Manideep’s frontend projects, skills, resume, and contact links with a professional and engaging design inspired by Netflix UI.
+
+📦 STACK:
+- React + Vite
+- Tailwind CSS for styling
+- Fully responsive for mobile, tablet, and desktop
+- Deploy on Vercel with GitHub integration
+
+🧠 BRANDING:
+- Primary colors: Black background, white text, Netflix red (#E50914) as accent
+- Fonts: Clean, modern sans-serif (default Tailwind)
+- Page theme: Looks like Netflix homepage but repurposed for developer portfolio
+
+🧍‍♂️ ABOUT:
+- Name: Manideep Daram
+- Title: Frontend Developer | React | Tailwind | FastAPI
+- Email: manideepdaram@gmail.com
+- Location: Hyderabad, India
+- Status: Open to remote opportunities, immediately available to join
+- Resume: `Manideep_Daram_Resume.pdf` (add to `/public` folder and link in download button)
+
+🖼️ HERO SECTION:
+- Full-screen banner (Netflix-style) with:
+  - Background image: `/assets/ssmart.jpg`
+  - Title: “Manideep Daram”
+  - Subtitle: “Frontend Developer | React | Tailwind | FastAPI”
+  - CTA Buttons: 
+    - “Download Resume” → links to `Manideep_Daram_Resume.pdf`
+    - “Contact” → opens `mailto:manideepdaram@gmail.com`
+
+🎥 PROJECTS (Carousel/Horizontal Scroll):
+- Project 1: SS MART
+  - Description: Retail web app using React, MongoDB
+  - Live link: https://ss-mart-frontend.vercel.app
+  - GitHub: https://github.com/0535MANIDEEP/ss-mart-frontend
+  - Image: `/assets/ssmart.jpg`
+- Project 2: AI Scam Detector
+  - Description: Scam detection app using FastAPI, OCR
+  - Live link: https://scam-detector-frontend.vercel.app
+  - GitHub: https://github.com/0535MANIDEEP/ai-scam-detector
+  - Image: `/assets/ai-scam.jpg`
+
+🛠️ SKILLS SECTION:
+- Frontend: React, Tailwind CSS, HTML, JavaScript
+- Backend: FastAPI, MongoDB
+- Tools: GitHub, Vercel, Figma
+- AI: OpenAI, HuggingFace
+
+🧾 ABOUT SECTION:
+- Personal background
+- B.Tech in CSE with 8.53 CGPA
+- Internship at Crystalline Software Technologies
+- Focused on fast, scalable UIs with React/FastAPI
+- Interested in remote work and impactful tech
+
+📫 FOOTER:
+- Social Links: GitHub (0535MANIDEEP), LinkedIn, Email
+- Resume download
+- Year and copyright
+
+📁 FILES TO ADD TO PUBLIC FOLDER:
+- /assets/ssmart.jpg
+- /assets/ai-scam.jpg
+- /Manideep_Daram_Resume.pdf
+
+📄 ROUTING:
+- Single-page app (SPA) — no React Router needed
+- Scroll behavior for nav links: Home, Projects, Skills, Resume, Contact
+
+🚀 DEPLOYMENT:
+- Build: `npm run build`
+- Output: `dist`
+- Hosting: Vercel
+- Domain: [user may add custom domain later]
+
+✅ FINAL OUTPUT:
+- Fully functional and live Netflix-themed developer portfolio
+- Auto-linked resume
+- Mobile-friendly layout
+- GitHub-ready structure
+- Maintains Manideep’s branding and hiring readiness
