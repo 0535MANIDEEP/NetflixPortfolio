@@ -1,0 +1,80 @@
+🔧 TASK: Build and deploy a Netflix-themed developer portfolio for Manideep Daram.
+
+🎯 GOAL:
+Create a responsive, professional personal portfolio that uses a sleek Netflix-style UI to highlight Manideep’s actual work experience, skills, projects, and resume. Strictly based on verified details—no assumptions.
+
+📍 THEME INSTRUCTIONS:
+- Netflix UI vibe with dark mode by default
+- Layout: Fullscreen hero, scrolling sections (Projects, Skills, Experience, About, Contact)
+- Color scheme: Black (#000), White (#fff), Red accent (#E50914)
+- Font: Clean sans-serif (Inter or similar)
+- Responsive design for mobile, tablet, desktop
+
+🧑 PROFILE:
+- Full Name: Manideep Daram
+- Role: Frontend Developer
+- Location: Hyderabad, India
+- Email: manideepdaram@gmail.com
+- GitHub: https://github.com/0535MANIDEEP
+- LinkedIn: [Add your profile URL]
+- Availability: **Immediately open to join remote roles**
+- Resume: `/Manideep_Daram_Resume.pdf` (include download button)
+
+🎬 HERO SECTION:
+- Fullscreen background image: `/assets/ssmart.jpg`
+- Title: "Manideep Daram"
+- Subtitle: "Frontend Developer | React | Tailwind | FastAPI"
+- Buttons: "Download Resume", "Contact Me"
+
+📁 PROJECTS:
+1. **SS MART**
+   - Retail frontend project for a local mart business
+   - Stack: React, Tailwind CSS, Node.js, MongoDB
+   - GitHub: https://github.com/0535MANIDEEP/ss-mart-frontend
+   - Live: https://ss-mart-frontend.vercel.app
+   - Image: `/assets/ssmart.jpg`
+
+2. **AI Scam Detector**
+   - OCR + AI-powered fraud detection tool
+   - Stack: FastAPI, MongoDB, Hugging Face, React
+   - GitHub: https://github.com/0535MANIDEEP/ai-scam-detector
+   - Live: https://scam-detector-frontend.vercel.app
+   - Image: `/assets/ai-scam.jpg`
+
+📊 SKILLS SECTION:
+- React.js, Tailwind CSS, HTML5, JavaScript
+- FastAPI, MongoDB
+- GitHub, Vercel, Figma, Postman
+- OpenAI, Hugging Face (basic integration)
+
+🧾 EXPERIENCE SECTION:
+- **Frontend Developer Intern**  
+  Crystalline Software Technologies – Hyderabad  
+  **Duration:** Dec 2023 – June 2024 (6 months)  
+  **Responsibilities:**
+  - Built responsive web interfaces using React.js and Tailwind CSS
+  - Integrated RESTful APIs and collaborated with backend team
+  - Used GitHub for version control and Vercel for deployment
+  - Participated in agile sprints and contributed to real client UI components
+
+🧠 ABOUT SECTION:
+- BTech in CSE from VJIT with 8.53 CGPA
+- Passionate about performance-focused frontend systems
+- Quick learner, continuously shipping full-stack projects
+- Interested in AI-integrated apps and scalable UI frameworks
+
+📩 CONTACT FOOTER:
+- GitHub, LinkedIn icons
+- Email link: `mailto:manideepdaram@gmail.com`
+- Resume download link
+- "Open to work — remote only"
+
+🚀 DEPLOYMENT:
+- Tech stack: React (with Vite), Tailwind CSS
+- Ready for Vercel deployment (`npm run build`)
+- Integrate with GitHub repo for CI/CD
+
+✅ DELIVERABLE:
+- One-page Netflix-style portfolio
+- No fake experience or inflated data
+- Emphasis on clean UI, real projects, internship, and job-readiness

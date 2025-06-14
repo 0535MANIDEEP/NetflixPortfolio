@@ -62,43 +62,42 @@ export default function Portfolio() {
   const projects = [
     {
       name: "SS MART",
-      description: "Retail web app using React, MongoDB",
+      description: "Retail frontend project for a local mart business",
       liveUrl: "https://ss-mart-frontend.vercel.app",
       githubUrl: "https://github.com/0535MANIDEEP/ss-mart-frontend",
       image: "/assets/ssmart.jpg",
-      tags: ["React", "MongoDB", "Tailwind"]
+      tags: ["React", "Tailwind CSS", "Node.js", "MongoDB"]
     },
     {
       name: "AI Scam Detector",
-      description: "Scam detection app using FastAPI, OCR",
+      description: "OCR + AI-powered fraud detection tool",
       liveUrl: "https://scam-detector-frontend.vercel.app",
       githubUrl: "https://github.com/0535MANIDEEP/ai-scam-detector",
       image: "/assets/ai-scam.jpg",
-      tags: ["FastAPI", "OCR", "AI"]
+      tags: ["FastAPI", "MongoDB", "Hugging Face", "React"]
     }
   ];
 
   const skills = {
     frontend: [
-      { name: "React", rating: 5 },
+      { name: "React.js", rating: 5 },
       { name: "Tailwind CSS", rating: 5 },
-      { name: "JavaScript", rating: 4 },
-      { name: "HTML", rating: 5 }
+      { name: "HTML5", rating: 5 },
+      { name: "JavaScript", rating: 4 }
     ],
     backend: [
       { name: "FastAPI", rating: 4 },
-      { name: "MongoDB", rating: 4 },
-      { name: "Python", rating: 3 }
+      { name: "MongoDB", rating: 4 }
     ],
     tools: [
       { name: "GitHub", rating: 5 },
       { name: "Vercel", rating: 5 },
-      { name: "Figma", rating: 4 }
+      { name: "Figma", rating: 4 },
+      { name: "Postman", rating: 4 }
     ],
     ai: [
       { name: "OpenAI", rating: 3 },
-      { name: "HuggingFace", rating: 3 },
-      { name: "OCR", rating: 4 }
+      { name: "Hugging Face", rating: 3 }
     ]
   };
 
@@ -125,7 +124,7 @@ export default function Portfolio() {
             </div>
             
             <div className="hidden md:flex space-x-8">
-              {['home', 'projects', 'skills', 'about', 'contact'].map((section) => (
+              {['home', 'projects', 'skills', 'experience', 'about', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -152,7 +151,7 @@ export default function Portfolio() {
           isMobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
         }`}>
           <div className="px-4 py-6 space-y-4">
-            {['home', 'projects', 'skills', 'about', 'contact'].map((section) => (
+            {['home', 'projects', 'skills', 'experience', 'about', 'contact'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
@@ -367,7 +366,7 @@ export default function Portfolio() {
               <CardContent className="p-6">
                 <div className="text-center mb-4">
                   <Bolt className="w-10 h-10 text-red-500 mx-auto mb-4" />
-                  <h3 className="text-xl font-bold">Bolt</h3>
+                  <h3 className="text-xl font-bold">Tools</h3>
                 </div>
                 <div className="space-y-3">
                   {skills.tools.map((skill, index) => (
@@ -404,6 +403,59 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Experience Section */}
+      <section id="experience" className="py-16 lg:py-24 bg-netflix-black">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Professional Experience</h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">Building real-world applications and contributing to meaningful projects</p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-netflix-dark border-white/10 overflow-hidden shadow-2xl hover:border-red-500/50 transition-colors">
+              <CardContent className="p-8">
+                <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
+                  <div className="mb-4 lg:mb-0">
+                    <h3 className="text-2xl font-bold text-white mb-2">Frontend Developer Intern</h3>
+                    <p className="text-xl text-red-500 font-semibold mb-2">Crystalline Software Technologies</p>
+                    <div className="flex items-center text-gray-400 mb-2">
+                      <MapPin className="w-4 h-4 mr-2" />
+                      <span>Hyderabad, India</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <Clock className="w-4 h-4 mr-2" />
+                    <span className="font-semibold">Dec 2023 – June 2024 (6 months)</span>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <h4 className="text-lg font-semibold text-white mb-3">Key Responsibilities:</h4>
+                  <ul className="space-y-3 text-gray-300">
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                      <span>Built responsive web interfaces using React.js and Tailwind CSS</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                      <span>Integrated RESTful APIs and collaborated with backend team</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                      <span>Used GitHub for version control and Vercel for deployment</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                      <span>Participated in agile sprints and contributed to real client UI components</span>
+                    </li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="py-16 lg:py-24 bg-netflix-black">
         <div className="container mx-auto px-4 lg:px-8">
@@ -412,13 +464,12 @@ export default function Portfolio() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">About Me</h2>
               <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
                 <p>
-                  I'm a passionate Frontend Developer based in <span className="text-white font-medium">Hyderabad, India</span>, 
-                  with a strong foundation in modern web technologies and a keen eye for creating exceptional user experiences.
+                  I'm a passionate Frontend Developer with a <span className="netflix-red font-medium">BTech in CSE from VJIT with 8.53 CGPA</span>, 
+                  passionate about performance-focused frontend systems.
                 </p>
                 <p>
-                  I hold a <span className="netflix-red font-medium">B.Tech in Computer Science and Engineering</span> with an impressive 
-                  <span className="netflix-red font-medium"> 8.53 CGPA</span>, which provided me with a solid theoretical foundation 
-                  to complement my practical development skills.
+                  As a <span className="text-white font-medium">quick learner</span>, I'm continuously shipping full-stack projects 
+                  and have a keen interest in <span className="netflix-red font-medium">AI-integrated apps and scalable UI frameworks</span>.
                 </p>
                 <p>
                   During my internship at <span className="text-white font-medium">Crystalline Software Technologies</span>, 
