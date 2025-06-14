@@ -168,9 +168,12 @@ export default function Portfolio() {
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" 
-            alt="Modern developer workspace with multiple monitors showing code" 
+            src="/assets/ssmart.jpg" 
+            alt="SS MART project interface showcasing modern e-commerce design" 
             className="w-full h-full object-cover"
+            onError={(e) => {
+              e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080";
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-netflix-black/80 via-netflix-black/60 to-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-netflix-black/80 via-transparent to-netflix-black/40"></div>
@@ -613,11 +616,12 @@ export default function Portfolio() {
       <footer className="bg-netflix-black border-t border-white/10 py-8">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-gray-400">
+            <div className="text-gray-400 text-center md:text-left">
               <p>&copy; {new Date().getFullYear()} Manideep Daram. All rights reserved.</p>
+              <p className="text-sm netflix-red font-medium mt-1">Open to work — remote only</p>
             </div>
             <div className="flex space-x-6 text-sm">
-              {['home', 'projects', 'skills', 'about', 'contact'].map((section) => (
+              {['home', 'projects', 'skills', 'experience', 'about', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
