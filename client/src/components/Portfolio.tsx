@@ -486,8 +486,8 @@ export default function Portfolio() {
               
               <div className="grid grid-cols-2 gap-6 pt-6">
                 <div className="text-center">
-                  <div className="text-2xl font-bold netflix-red">2+</div>
-                  <div className="text-sm text-gray-400">Years Experience</div>
+                  <div className="text-2xl font-bold netflix-red">6</div>
+                  <div className="text-sm text-gray-400">Months Experience</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold netflix-red">10+</div>
